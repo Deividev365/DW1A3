@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada Serra Verde</title>
+</head>
+<body>
+
+
+    <nav>
+        <h1>Pousada Serra Verde</h1>
+        
+        <div>
+            
+            <a href="/src/Pages/home.html">Home</a>
+            <a href="/src/Pages/apousada.html">A Pousada</a>
+            <a href="/src/Pages/reservas.html">Reservas</a>
+            <a href="/src/Pages/tarifas.html">Tarifas</a>
+            <a href="/src/Pages/comoChegar.html">Como Chegar</a>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h1>Reservas</h1>
+        
+
+        <p>Você pode efetuar sua reserva pelo telefone (12) 4321-1234, ou pelo nosso site, segundo os passos abaixo: </p>
+
+        <ol>
+            <li>Preencher o formulario a seguir</li>
+            <li>Aguarde nosso contato telefônico, ou por e-mail, para confirmação da reserva</li>
+            <li>Efetue a transferência do valor da reserva</li>
+            <li>Envie ocomprovante de transferência para o email: <a href="">atendimento@pousadaserraverde.tur.br</a></li>
+        </ol>
+
+
+       
+           <form action="POST">
+
+                <div><br>
+                    <label for="nome">Nome: </label> 
+                    <input type="text" id="nome" name="nome">
+                </div>
+
+                <div><br>
+
+                    <p><label for="range_weight">Idade: </label> <input type="range" name="idade" min="0" max="100" value="0">
+                        <span>18 ANO(S)</span></p>
+                </div>
+
+                <div><br>
+
+                    <label for="celular">Celular: </label>
+                    <input placeholder="99 9999 9999" type="text" id="celular" name="celular">
+                
+                </div>
+
+                <div><br>
+
+                    <label for="nome">Email: </label>
+                    <input type="text" id="email" name="email">
+               
+                </div>
+
+                <div><br>
+
+                    <label for="nome">Cidade: </label>
+                    <input type="text" id="cidade" name="cidade">
+               
+                </div>
+
+                <div><br>
+
+                    <label for="nome">Chalé: </label>
+
+                    <input type="radio" id="economico" name="economico" value="economico" checked>
+                    <label for="economico">Econômico</label>
+
+                    <input type="radio" id="Standard" name="Standard" value="Standard" >
+                    <label for="Standard">Standard</label>
+
+                    <input type="radio" id="Luxo" name="Luxo" value="Luxo" >
+                    <label for="Luxo">Luxo</label>
+
+                    <input type="radio" id="Família" name="Família" value="Família" >
+                    <label for="Família">Família</label>
+                
+                </div>
+
+                <div><br>
+
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" name="nome">
+                
+                </div>
+
+                <div><br>
+
+                    <label for="nome">Chegada: </label>
+                    <input type="date" id="chegada" name="chegada">
+                
+                </div>
+
+                <div><br>
+
+                    <label for="nome">Partida: </label>
+                    <input type="date" id="partida" name="partida">
+                
+                </div>
+
+
+                <div><br>
+
+                    <label for="nome">Adultos: </label>
+                    <input type="number" id="adultos" name="adultos">
+               
+                </div>
+
+                <div><br>
+
+                    <label for="nome">Crianças: </label>
+                    <input value="0" type="number" id="criancas" name="criancas">
+
+                    <label for="nome">Até 5 anos: </label>
+                    <input value="0" type="number" id="criancas-until-five" name="criancas-until-five">
+               
+                </div>
+
+
+                <div><br>
+
+                    <label for="nome">Quero reservar uma vaga no estacionamento: </label>
+                    <input type="checkbox" id="estacionamento" name="estacionamento">
+               
+                </div>
+
+                <div><br>
+
+                <label for="nome">Forma de Pagamento</label>
+                    <select name="forma-de-pagamento" id="forma-de-pagamento">
+
+                             <option value="">Selecione uma opção</option>
+                             <option value="">Transferência (TED/DOC)</option>
+                             <option value="">PIX</option>
+                             <option value="">Depósito </option>
+
+                        <optgroup label="Cartão de Crédito">
+
+                            <option value="mastercard">Mastercard</option>
+                            <option value="visa">Visa</option>
+                            <option value="elo">Elo</option>
+
+                        </optgroup>
+                
+                    </select>
+                </div>
+
+                
+                <div><br>
+
+                    <label for="nome">Se desejar, faça um pedido especial, faremos o possível para atendê-lo</label><br><br>
+                    <textarea placeholder="Máximo de 256 caracteres." name="obs" id="obs" cols="45" rows="4" maxlength="256"></textarea>
+                
+                </div>
+
+                <br>
+
+                <button type="submit">Solicitar Reserva</button>
+           </form>
+
+    
+        
+        
+    
+    </main>
+
+    
+</body>
+</html>
