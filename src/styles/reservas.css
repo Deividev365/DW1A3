@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.menu {
+   /* background-color: rgb(198, 216, 198);*/
+   background-image: url(../Mídias/home/paisagem.png);
+   background-repeat: no-repeat;
+   background-size: 1400px;
+   height: 250px;
+   width: 100%;
+
+}
+
+.menu .logo {
+    font-size: 35px;
+    color: rgb(4, 8, 4);
+    line-height: 90px;
+    padding: 0 40px;
+    font-weight: bold;
+   
+}
+
+.menu ul {
+    float: right;
+    margin-right: 100px;
+    margin-top: 9px;
+}
+
+.menu ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+.menu ul li a {
+    color: green;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 7px 20px;
+    border-radius: 9px;
+    font-weight: bold;
+
+    transition: 0.2s;
+
+}
+
+
+.menu ul li a:hover {
+  
+    background-color: rgb(157, 216, 80);
+
+}
+
+.main-content {
+    background-color: rgb(54, 212, 48);
+   
+}
+
+.main-content h1 {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-content p {
+    font-size: 20px;
+    margin-left:  40px;
+}
+
+.main-content ol {
+    margin-left: 40px;
+    padding: 25px;
+    
+}
+
+form label {
+    margin-left: 20px;
+}
+
+textarea {
+    margin-left: 20px;
+
+}
+
+form button {
+    padding: 25px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.main-content footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(107, 231, 118);
+    height: 20px;
+}
+
+
+
+
+
