@@ -7,19 +7,19 @@
 }
 
 .menu {
-
-    background-image: url(../Mídias/home/paisagem.png);
+    background-color: rgb(192, 228, 228);
    background-repeat: no-repeat;
    background-size: 1400px;
-   height: 250px;
+   height: 120px;
    width: 100%;
 
 }
 .menu .logo {
-    font-size: 35px;
+    font-size: 25px;
+    font-family: sans-serif;
     color: rgb(4, 8, 4);
-    line-height: 90px;
-    padding: 0 40px;
+    line-height: 110px;
+    padding: 0 30px;
     font-weight: bold;
    
 }
@@ -27,7 +27,7 @@
 .menu ul {
     float: right;
     margin-right: 100px;
-    margin-top: 9px;
+    margin-top: 20px;
 }
 
 .menu ul li {
@@ -43,11 +43,11 @@
 
 .menu ul li a {
     color: green;
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
     background-color: white;
     padding: 7px 20px;
-    border-radius: 9px;
+    border-radius: 6px;
     font-weight: bold;
 
     transition: 0.2s;
@@ -57,16 +57,19 @@
 /*pseudo, usando hover */
 .menu ul li a:hover {
   
-    background-color: rgb(157, 216, 80);
+    background-color: rgb(54, 212, 48);
 
 }
 /*pseudo, usando active*/
-.menu ul li > a:active {
-    background-color: black;
-}
+/* .menu ul li > a:active {
+    background-color: rgb(214, 143, 143);
+} */
 
 .main-content {
-    background-color: rgb(54, 212, 48);
+    background-color: rgb(79, 204, 74);
+    height: 100vh;
+
+    padding: 45px;
    
 }
 
@@ -74,11 +77,15 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 .main-content p {
     font-size: 20px;
-    margin-bottom:  20px;
+    margin-bottom:  10px;
+    font-family: sans-serif;
+
 }
 
 .main-content img {
@@ -93,13 +100,13 @@
     font-size: 13px;
 }
 
-.main-content footer {
+/* .main-content footer {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(107, 231, 118);
     height: 20px;
-}
+} */
 
 
 
