@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/reservas.css">
+    <script defer src="/src/Scripts/index.js"></script>
+
 
     <title>Pousada Serra Verde</title>
 </head>
@@ -37,31 +39,33 @@
         </ol>
 
 
+       <h4>Faça sua reserva agora na Pousada Serra Verde</h4>
+           
        
-           <form action="POST">
+       <form id="form" name="form" method="GET">
 
-                <div><br>
+                <div>
                     <label for="nome">Nome: </label> 
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" size="50">
                 </div>
 
-                <div><br>
-
-                    <p><label for="range_weight">Idade: </label> <input type="range" name="idade" min="0" max="100" value="0">
-                        <span>18 ANO(S)</span></p>
+                <div>
+                    <label for="idade">Idade: </label> 
+                    <input type="range" id="idade" value="18" min="18" max="100">
+                    <output id="saida" for="idade"> 18</output> ano(s)
                 </div>
 
-                <div><br>
+                <div>
 
                     <label for="celular">Celular: </label>
-                    <input placeholder="99 9999 9999" type="text" id="celular" name="celular">
+                    <input type="tel" id="celular" name="celular" placeholder="99 9999 9999">
                 
                 </div>
 
-                <div><br>
+                <div>
 
-                    <label for="nome">Email: </label>
-                    <input type="text" id="email" name="email">
+                    <label for="mail">Email: </label>
+                    <input type="text" id="mail" name="mail">
                
                 </div>
 
@@ -69,11 +73,18 @@
 
                     <label for="nome">Cidade: </label>
                     <input type="text" id="cidade" name="cidade">
-               
+                    <label for="">UF</label>
+                    <input typ list="estados" id="uf" name="uf" size="2" type="text">
+
+                    <datalist id="estados">
+                        <option value="SP" >
+                        <option value="RJ" >
+                        <option value="MG" >
+                    </datalist>
+                
                 </div>
-
-                <div><br>
-
+ 
+                <div><br> 
                     <label for="nome">Chalé: </label>
 
                     <input type="radio" id="economico" name="economico" value="economico" checked>
@@ -122,10 +133,10 @@
                 <div><br>
 
                     <label for="nome">Crianças: </label>
-                    <input value="0" type="number" id="criancas" name="criancas">
+                    <input onchange="demo2()" value="0" type="number" id="criancas" name="criancas">
 
                     <label for="nome">Até 5 anos: </label>
-                    <input value="0" type="number" id="criancas-until-five" name="criancas-until-five">
+                    <input onchange="setCriancaAge()" value="0" type="number" id="criancas-until-five" name="criancas-until-five">
                
                 </div>
 
@@ -168,15 +179,14 @@
 
                 <br>
 
-                <button type="submit">Solicitar Reserva</button>
-           </form>
-
-    
-        
-        
-    
+                <button type="submit"> Solicitar Reserva</button>
+            </form>
+            
     </main>
 
-    
+
+ 
+
+
 </body>
 </html>
